@@ -64,7 +64,37 @@ header > h1 {
   font-weight: 700;
   padding: 0.5rem;
 }
-
+/** Présentation ohmyfood**/
+.presentation {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 2rem;
+}
+.presentation__text {
+  text-align: center;
+}
+/** bouton explorer**/
+.btn__primary {
+  width: 14rem;
+  height: 3rem;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ff79da, #9356dc);
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
+  transition: opacity 250ms, box-shadow 250ms;
+  opacity: 1;
+}
+.btn__primary:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 0.3rem 0.5rem 0.5rem #bbbaba;
+}
 
 
 /** footer**/

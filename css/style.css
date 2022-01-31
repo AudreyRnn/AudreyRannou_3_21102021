@@ -120,6 +120,15 @@ header > h1 {
    box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
   gap: 0.8rem;
   font-weight: 600;
+  transition:background-color 250ms;
+}
+.operating__btn:hover
+{
+  background-color: #f5edff;
+  cursor: pointer;
+}
+.operating__btn:hover i {
+color:#9356dc;
 }
 .operating__bubble {
   position: relative;
@@ -137,7 +146,14 @@ header > h1 {
   font-size: 1.5rem;
   color:
   #6b6a6a;
+  transition: color 250ms;
 }
+
+
+
+
+
+
 
 /** footer**/
 footer {

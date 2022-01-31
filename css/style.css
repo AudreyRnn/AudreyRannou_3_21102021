@@ -16,7 +16,7 @@ a {
   color: inherit;
 }
 h1,
-h3 {
+footer > h3 {
   font-family: "shrikhand", cursive;
 }
 body {
@@ -31,7 +31,8 @@ body {
 .title__home {
   font-size: 1.8rem;
 }
-.restaurants__view {
+.restaurants__view,
+#restaurants__view {
   margin: 1.5rem;
 }
 
@@ -117,18 +118,17 @@ header > h1 {
   border-radius: 1.5rem;
   background-color: #f6f6f6;
   align-items: center;
-   box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
+  box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
   gap: 0.8rem;
   font-weight: 600;
-  transition:background-color 250ms;
+  transition: background-color 250ms;
 }
-.operating__btn:hover
-{
+.operating__btn:hover {
   background-color: #f5edff;
   cursor: pointer;
 }
 .operating__btn:hover i {
-color:#9356dc;
+  color: #9356dc;
 }
 .operating__bubble {
   position: relative;
@@ -144,16 +144,50 @@ color:#9356dc;
 }
 .operating__list i {
   font-size: 1.5rem;
-  color:
-  #6b6a6a;
+  color: #6b6a6a;
   transition: color 250ms;
 }
 
+/** section restaurants**/
 
+.restaurants {
+  background-color: #f6f6f6;
+  padding-top: 1rem;
+  flex-direction: column;
+}
 
+.restaurants__list {
+  flex-direction: column;
+  gap: 2rem;
+}
 
-
-
+.restaurants__cards {
+  margin: 1rem;
+   box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
+   border-radius: 2rem;
+}
+.restaurants__cards img {
+  width: 100%;
+  max-width: 990px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  object-position: 50% 60%;
+}
+.restaurants__cards > figcaption {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  max-width: 990px;
+}
+.restaurants__cards h3 {
+  margin: 0;
+  padding: 1rem 0 0.4rem 0.7rem;
+}
+.restaurants__cards p {
+  padding-left: 0.7rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
 
 /** footer**/
 footer {

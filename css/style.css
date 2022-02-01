@@ -154,6 +154,7 @@ header > h1 {
 .restaurants {
   background-color: #f6f6f6;
   padding-top: 1rem;
+  padding-bottom: 2rem;
   flex-direction: column;
 }
 
@@ -175,21 +176,24 @@ header > h1 {
   border-radius: 1rem 1rem 0 0;
   object-position: 50% 60%;
 }
-.restaurants__cards > figcaption {
+.restaurants__cards  figcaption {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   max-width: 990px;
+  justify-content: space-between;
 }
-.restaurants__cards h3 {
+.restaurants__info h3 {
   margin: 0;
   padding: 1rem 0 0.4rem 0.7rem;
 }
-.restaurants__cards p {
+.restaurants__info p {
   padding-left: 0.7rem;
   padding-bottom: 1rem;
   margin: 0;
 }
-
+.restaurants__cards i{
+  font-size: 2rem;
+}
 
 
 /** footer**/

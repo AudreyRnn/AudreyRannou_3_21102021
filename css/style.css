@@ -69,6 +69,7 @@ header > h1 {
   background-color: #eaeaea;
   font-weight: 700;
   padding: 0.5rem;
+  width: 150px;
 }
 /** Présentation ohmyfood**/
 .presentation {
@@ -181,6 +182,7 @@ header > h1 {
   border-radius: 0 0 1rem 1rem;
   max-width: 990px;
   justify-content: space-between;
+  position: relative;
 }
 .restaurants__info h3 {
   margin: 0;
@@ -194,7 +196,14 @@ header > h1 {
 .restaurants__cards i{
   font-size: 2rem;
 }
-
+.heart
+{
+width:2rem;
+height: 2rem;
+position: absolute;
+top:1rem;
+right:2rem;
+}
 
 /** footer**/
 footer {
@@ -218,4 +227,83 @@ footer > ul i {
 }
 footer a:hover {
   color: #9356dc;
+}
+
+
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: #39393a;
+  position: fixed;
+  top: 0;
+  left:0;
+  font-family: "shrikhand", cursive;
+  color: #fff;
+  animation: load 3s forwards;
+
+}
+
+.loader__spinner {
+  width: 50px;
+  height: 50px;
+  display: inline-block; 
+  vertical-align: middle; 
+  position: relative;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: rgb(147, 86, 220);
+  animation: spin 1s linear 0s infinite;
+}
+.loader__spinner:after {
+  content: "";
+  position: absolute; 
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: rgb(255, 121, 218);
+  opacity: 0.8;
+  animation: spin 5s linear 0s infinite;
+}
+.loader__spinner::before {
+  content: "";
+  position: absolute; 
+  top: 14px;
+  left: 14px;
+  bottom: 14px;
+  right: 14px;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  border-top-color: rgb(153, 226, 208);
+  opacity: 0.5;
+  animation: spin 10s linear 0s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+    0%{
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+    90%{
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+    
+    100%{
+        height: 0%;
+        width: 0%;
+        opacity: 0;
+    }
 }

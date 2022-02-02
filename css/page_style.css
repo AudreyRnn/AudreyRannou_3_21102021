@@ -31,10 +31,16 @@ body {
 /**header**/
 .header__page {
   justify-content: center;
+  position: relative;
+}
+.header__page h1{
+  font-size: 2.3rem;
 }
 .header__page i {
   font-size: 2rem;
-
+  position:absolute;
+  left:3rem;
+  top:1.7rem;
 }
 
 
@@ -61,17 +67,23 @@ body {
 }
 .container__name{
 justify-content: space-between;
+position: relative;
 }
-.container__name i{
+.heart__page{
+  width:2rem ;
+  height: 2rem;
+  position: absolute;
+  right:2rem;
+}
+.heart__page i{
   font-size: 2rem;
-  padding-right: 2.5rem;
 }
 .restaurant__name {
   margin: 0;
   font-family:"shrikhand", cursive;;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .dishes{
   flex-direction: column;

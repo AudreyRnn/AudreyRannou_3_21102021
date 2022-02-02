@@ -162,8 +162,20 @@ header > h1 {
 .restaurants__list {
   flex-direction: column;
   gap: 2rem;
+  position: relative;
 }
-
+.new {
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  background-color: rgb(153, 226, 208);
+  padding: 0.5rem 0.8rem;
+  color: rgb(5, 138, 105);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  z-index: 1;
+}
 .restaurants__cards {
   margin: 1rem;
   box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
@@ -177,6 +189,7 @@ header > h1 {
   border-radius: 1rem 1rem 0 0;
   object-position: 50% 60%;
 }
+
 .restaurants__cards figcaption {
   background-color: white;
   border-radius: 0 0 1rem 1rem;

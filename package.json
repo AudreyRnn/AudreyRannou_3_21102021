@@ -1,0 +1,24 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 Ohmyfood",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  },
+  "scripts": {
+    "sass": "sass ./sass/style.scss:./css/style.css -w --style expanded",
+    "prefix": "postcss ./css/style.css --use autoprefixer/css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AudreyRnn/AudreyRannou_3_21102021.git"
+  },
+  "author": "Audrey Rannou",
+  "license": "ISC",
+  "browserslist": "last 2 versions",
+  "bugs": {
+    "url": "https://github.com/AudreyRnn/AudreyRannou_3_21102021/issues"
+  },
+  "homepage": "https://github.com/AudreyRnn/AudreyRannou_3_21102021#readme"
+}

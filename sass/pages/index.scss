@@ -1,0 +1,83 @@
+//bloc présentation
+.presentation {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 2rem;
+  &__text {
+    text-align: center;
+  }
+}
+//mise en forme du bloc fonctionnement
+.operating {
+  flex-direction: column;
+  &__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+// insertion des bulles avec chiffres
+.operating__bubble {
+  position: relative;
+  top: 0;
+  left: -1rem;
+  background-color: #9356dc;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+//mise en forme des icones
+.operating__list i {
+  font-size: 1.5rem;
+  color: $color-ico;
+  transition: color 250ms;
+}
+
+// bloc restaurant
+.restaurants {
+  background-color: $back-color;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
+}
+.restaurants__list {
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.restaurants__cards {
+  margin: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem $color-box;
+  border-radius: 2rem;
+  & img {
+    width: 100%;
+
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    object-position: 50% 60%;
+  }
+  & figcaption {
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+.restaurants__info h3 {
+  margin: 0;
+  padding: 1rem 0 0.4rem 0.7rem;
+}
+.restaurants__info p {
+  padding-left: 0.7rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}

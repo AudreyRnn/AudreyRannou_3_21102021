@@ -1,0 +1,18 @@
+.location {
+  background-color: $location-color;
+  padding: 1.5rem 0;
+  &__search {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+.search__area {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  border: 1px solid $location-color;
+  background-color: $location-color;
+  font-weight: 700;
+  padding: 0.5rem;
+  width: 150px;
+}

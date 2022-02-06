@@ -165,6 +165,10 @@ header i {
   margin: 0;
 }
 
+main {
+  margin-bottom: -2.5rem;
+}
+
 /** image du restaurant**/
 .fig__page {
   margin: 0;

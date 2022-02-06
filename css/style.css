@@ -306,12 +306,16 @@ footer a:hover {
 }
 
 .new {
+  position: relative;
+}
+.new::before {
+  content: "Nouveau";
   position: absolute;
-  top: 10%;
-  right: 8%;
+  top: 1.5rem;
+  right: 1.5rem;
   background-color: #99e2d0;
   padding: 0.5rem 0.8rem;
-  color: #058a69;
+  color: #278870;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 0.2rem;

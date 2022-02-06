@@ -1,0 +1,13 @@
+@mixin new {
+  content: "Nouveau";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: $tertiary-color;
+  padding: 0.5rem 0.8rem;
+  color: $tertiary-color-dark;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  z-index: 1;
+}

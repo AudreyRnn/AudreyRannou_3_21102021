@@ -5,7 +5,7 @@
   border-radius: 3rem;
   justify-content: center;
   align-items: center;
-  background:$btn-color;
+  background: $btn-color;
   border: none;
   color: #ffffff;
   font-weight: 500;
@@ -41,16 +41,11 @@
 }
 // l'insert "nouveau"
 .new {
-  position: absolute;
-  top: 10%;
-  right: 8%;
-  background-color: $tertiary-color;
-  padding: 0.5rem 0.8rem;
-  color: rgb(5, 138, 105);
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.2rem;
-  z-index: 1;
+  position: relative;
+  
+  &::before{
+ @include new;
+  }
 }
 
 //les coeurs//

@@ -340,4 +340,21 @@ footer a:hover {
   right: 2rem;
 }
 
+.far::after {
+  content: "\f004";
+  position: relative;
+  left: -2rem;
+  transition: 1s opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.far:hover::after {
+  font-weight: bold;
+  opacity: 1;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */

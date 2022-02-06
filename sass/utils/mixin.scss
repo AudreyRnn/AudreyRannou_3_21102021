@@ -32,3 +32,18 @@
     box-shadow: 0.3rem 0.5rem 0.5rem $color-box;
   }
 }
+@mixin heart-after{
+  content: "\f004";
+  position: relative;
+  left: -2rem;
+  transition: 1s opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+@mixin heart-hover{
+  font-weight: bold;
+  opacity: 1;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

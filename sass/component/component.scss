@@ -46,3 +46,10 @@
     right: 2rem;
   }
 }
+
+.far::after {
+ @include heart-after;
+}
+.far:hover::after {
+  @include heart-hover
+}

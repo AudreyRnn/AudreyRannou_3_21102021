@@ -1,4 +1,4 @@
-@mixin new {
+@mixin new {  // l'insert nouveau 
   content: "Nouveau";
   position: absolute;
   top: 1.5rem;
@@ -10,4 +10,25 @@
   font-weight: 500;
   border-radius: 0.2rem;
   z-index: 1;
+}
+
+@mixin gradient-btn
+{
+  width: 14rem;
+  height: 3rem;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  background: $btn-color;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 0.3rem 0.3rem 0.5rem $color-box;
+  transition: opacity 300ms, box-shadow 300ms;
+  opacity: 1;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 0.3rem 0.5rem 0.5rem $color-box;
+  }
 }

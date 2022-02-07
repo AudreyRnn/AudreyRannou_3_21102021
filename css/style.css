@@ -95,12 +95,24 @@ header i {
 
 .operating {
   flex-direction: column;
+  justify-content: center;
+}
+@media all and (min-width: 992px) {
+  .operating {
+    align-items: center;
+  }
 }
 .operating__list {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   padding-bottom: 1.5rem;
+}
+@media all and (min-width: 992px) {
+  .operating__list {
+    flex-direction: row;
+    width: 95%;
+  }
 }
 
 .operating__bubble {

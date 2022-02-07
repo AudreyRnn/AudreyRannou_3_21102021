@@ -9,4 +9,7 @@ $footer-color: #39393a;
 $color-ico: #6b6a6a;
 $btn-color:linear-gradient($secondary-color, $primary-color);
 
- 
+ $breakpoints:(
+     tablets:768px,
+     computers:992px,
+ );

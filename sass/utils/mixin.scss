@@ -52,3 +52,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@mixin tablet{
+  @media all and (min-width: map-get($breakpoints, tablets ))
+  {
+    @content;
+  }
+}
+@mixin computer {
+@media all and (min-width:map-get($breakpoints,computers))
+{
+  @content;
+}}

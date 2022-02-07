@@ -46,7 +46,19 @@
     align-self: flex-start;
     padding-left: 2rem;
     margin-bottom: 0;
+    position: relative;
   }
+}
+
+.dishes__title::after{
+content:"";
+border-bottom: 3px solid $tertiary-color;
+position:absolute;
+display: inline-block;
+bottom:-0.6rem;
+left:2rem;
+width:3rem;
+
 }
 
 .dishes__cards {
@@ -74,3 +86,4 @@ p {
   align-items: center;
   height: 8rem;
 }
+

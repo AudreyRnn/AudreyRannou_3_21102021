@@ -217,6 +217,17 @@ header i {
   align-self: flex-start;
   padding-left: 2rem;
   margin-bottom: 0;
+  position: relative;
+}
+
+.dishes__title::after {
+  content: "";
+  border-bottom: 3px solid #99e2d0;
+  position: absolute;
+  display: inline-block;
+  bottom: -0.6rem;
+  left: 2rem;
+  width: 3rem;
 }
 
 .dishes__cards {
@@ -267,6 +278,14 @@ footer ul li {
 }
 footer a:hover {
   color: #9356dc;
+}
+
+footer .fas {
+  margin-right: 1rem;
+}
+
+footer .fa-hands-helping {
+  font-size: 0.8rem;
 }
 
 .btn__primary {

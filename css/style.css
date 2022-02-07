@@ -185,12 +185,12 @@ header i {
 .menu {
   width: 100%;
   background-color: #f6f6f6;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 1.5rem;
   border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
   bottom: 2.5rem;
   z-index: 1;
+  flex-direction: column;
 }
 
 .container__name {
@@ -211,6 +211,11 @@ header i {
   justify-content: center;
   align-items: center;
   padding-bottom: 1.5rem;
+  align-items: center;
+  animation-name: appear;
+  animation-duration: 2000ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 .dishes__title {
   font-weight: 400;
@@ -218,6 +223,21 @@ header i {
   padding-left: 2rem;
   margin-bottom: 0;
   position: relative;
+}
+
+.dishes__starting {
+  animation-delay: 400ms;
+  opacity: 0;
+}
+
+.dishes__dish {
+  animation-delay: 900ms;
+  opacity: 0;
+}
+
+.dishes__dessert {
+  animation-delay: 1400ms;
+  opacity: 0;
 }
 
 .dishes__title::after {
@@ -238,7 +258,6 @@ header i {
   border-radius: 1.5rem;
   box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
   justify-content: space-between;
-  align-items: flex-end;
 }
 
 .dishes__description h4,
@@ -257,6 +276,16 @@ p {
   height: 8rem;
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+}
 footer {
   background-color: #39393a;
   flex-direction: column;

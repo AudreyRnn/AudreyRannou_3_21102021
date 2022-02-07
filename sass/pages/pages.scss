@@ -1,4 +1,4 @@
-.main__pages{
+.main__pages {
   margin-bottom: -2.5rem;
 }
 
@@ -16,12 +16,12 @@
 .menu {
   width: 100%;
   background-color: #f6f6f6;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 1.5rem;
   border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
   bottom: 2.5rem;
   z-index: 1;
+  flex-direction: column;
 }
 .container__name {
   justify-content: space-between;
@@ -41,6 +41,12 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 1.5rem;
+  align-items: center;
+  animation-name: appear;
+  animation-duration: 2000ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+
   &__title {
     font-weight: 400;
     align-self: flex-start;
@@ -49,15 +55,25 @@
     position: relative;
   }
 }
-
-.dishes__title::after{
-content:"";
-border-bottom: 3px solid $tertiary-color;
-position:absolute;
-bottom:-0.6rem;
-left:2rem;
-width:3rem;
-
+.dishes__starting {
+  animation-delay: 400ms;
+  opacity: 0;
+}
+.dishes__dish {
+  animation-delay: 900ms;
+  opacity: 0;
+}
+.dishes__dessert {
+  animation-delay: 1400ms;
+  opacity: 0;
+}
+.dishes__title::after {
+  content: "";
+  border-bottom: 3px solid $tertiary-color;
+  position: absolute;
+  bottom: -0.6rem;
+  left: 2rem;
+  width: 3rem;
 }
 
 .dishes__cards {
@@ -69,7 +85,6 @@ width:3rem;
   border-radius: 1.5rem;
   @include box-shadow;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .dishes__description h4,
 p {
@@ -86,3 +101,13 @@ p {
   height: 8rem;
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+}

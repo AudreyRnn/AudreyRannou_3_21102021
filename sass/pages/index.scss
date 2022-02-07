@@ -55,7 +55,7 @@
 
 .restaurants__cards {
   margin: 1rem;
-  box-shadow: 0.3rem 0.3rem 0.5rem $color-box;
+  @include box-shadow;
   border-radius: 2rem;
   & img {
     width: 100%;

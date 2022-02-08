@@ -16,7 +16,7 @@
 .menu {
   width: 100%;
   background-color: #f6f6f6;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
   bottom: 2.5rem;
@@ -31,11 +31,12 @@
     font-family: "shrikhand", cursive;
     padding-bottom: 1.5rem;
     padding-left: 1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
-.dishes__container{
-  @include computer{
+.dishes__container {
+  //placement des cartes pour le mode desktop
+  @include computer {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -55,7 +56,7 @@
   animation-fill-mode: forwards;
   @include computer {
     width: 45%;
-      }
+  }
 
   &__title {
     font-weight: 400;
@@ -65,19 +66,7 @@
     position: relative;
   }
 }
-.dishes__starting {
-  animation-delay: 400ms;
-  opacity: 0;
-}
-.dishes__dish {
-  animation-delay: 900ms;
-  opacity: 0;
-}
-.dishes__dessert {
-  animation-delay: 1400ms;
-  opacity: 0;
-}
-.dishes__title::after {
+.dishes__title::after { //Bordure sous les catégorues de plats
   content: "";
   border-bottom: 3px solid $tertiary-color;
   position: absolute;
@@ -95,6 +84,7 @@
   border-radius: 1.5rem;
   @include box-shadow;
   justify-content: space-between;
+  position: relative;
 }
 .dishes__description h4,
 p {
@@ -109,6 +99,19 @@ p {
   justify-content: center;
   align-items: center;
   height: 8rem;
+}
+
+.dishes__starting {
+  animation-delay: 400ms;
+  opacity: 0;
+}
+.dishes__dish {
+  animation-delay: 900ms;
+  opacity: 0;
+}
+.dishes__dessert {
+  animation-delay: 1400ms;
+  opacity: 0;
 }
 
 @keyframes appear {

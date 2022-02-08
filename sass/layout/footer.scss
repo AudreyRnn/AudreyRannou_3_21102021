@@ -4,6 +4,10 @@ footer {
   font-size: 1rem;
   color: white;
   line-height: 1.8rem;
+  @include computer ; @include tablet {
+    justify-content: center;
+    align-items: center;
+  }
   & h3 {
     font-weight: 300;
     padding-left: 1rem;
@@ -11,6 +15,10 @@ footer {
   & ul {
     padding-left: 1rem;
     padding-bottom: 2rem;
+    @include computer ;@include tablet {
+      display:flex;
+      gap:1rem
+    }
   }
   & ul li {
     padding-right: 0.3rem;

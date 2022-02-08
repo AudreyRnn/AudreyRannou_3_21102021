@@ -115,6 +115,12 @@ header i {
   }
 }
 
+@media all and (min-width: 768px) {
+  .operating h2 {
+    align-self: center;
+  }
+}
+
 .operating__bubble {
   position: relative;
   top: 0;
@@ -140,11 +146,32 @@ header i {
   padding-bottom: 2rem;
   flex-direction: column;
 }
+@media all and (min-width: 768px) {
+  .restaurants h2 {
+    text-align: center;
+  }
+}
+
+.restaurants__container {
+  flex-direction: column;
+}
+@media all and (min-width: 992px) {
+  .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 
 .restaurants__list {
   flex-direction: column;
   gap: 2rem;
   position: relative;
+}
+@media all and (min-width: 992px) {
+  .restaurants__list {
+    width: 45%;
+  }
 }
 
 .restaurants__cards {
@@ -305,6 +332,12 @@ footer {
   color: white;
   line-height: 1.8rem;
 }
+@media all and (min-width: 768px) {
+  footer {
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer h3 {
   font-weight: 300;
   padding-left: 1rem;
@@ -312,6 +345,12 @@ footer h3 {
 footer ul {
   padding-left: 1rem;
   padding-bottom: 2rem;
+}
+@media all and (min-width: 768px) {
+  footer ul {
+    display: flex;
+    gap: 1rem;
+  }
 }
 footer ul li {
   padding-right: 0.3rem;

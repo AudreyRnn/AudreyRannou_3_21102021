@@ -34,7 +34,14 @@
     font-size: 2rem;
   }
 }
-
+.dishes__container{
+  @include computer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
 .dishes {
   flex-direction: column;
   gap: 1.3rem;
@@ -46,6 +53,9 @@
   animation-duration: 2000ms;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+  @include computer {
+    width: 45%;
+      }
 
   &__title {
     font-weight: 400;

@@ -244,6 +244,15 @@ header i {
   font-size: 2rem;
 }
 
+@media all and (min-width: 992px) {
+  .dishes__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
 .dishes {
   flex-direction: column;
   gap: 1.3rem;
@@ -255,6 +264,11 @@ header i {
   animation-duration: 2000ms;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+}
+@media all and (min-width: 992px) {
+  .dishes {
+    width: 45%;
+  }
 }
 .dishes__title {
   font-weight: 400;

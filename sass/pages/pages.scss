@@ -66,7 +66,8 @@
     position: relative;
   }
 }
-.dishes__title::after { //Bordure sous les catégorues de plats
+.dishes__title::after {
+  //Bordure sous les catégorues de plats
   content: "";
   border-bottom: 3px solid $tertiary-color;
   position: absolute;
@@ -74,7 +75,7 @@
   left: 2rem;
   width: 3rem;
 }
-
+/**
 .dishes__cards {
   width: 95%;
   min-height: 5rem;
@@ -83,16 +84,79 @@
   background-color: #ffffff;
   border-radius: 1.5rem;
   @include box-shadow;
-  justify-content: space-between;
+
   position: relative;
+  overflow: hidden;
+
+  .square {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 1s;
+    background-color: $tertiary-color;
+  }
+
+    &:hover .square {
+      transform: translateX(0%);
+    }
+    .dishes__description {
+      background-color: aquamarine;
+      width: calc(100% - 50px);
+    }
+    &:hover .dishes__description {
+      width: calc(100% - 150px);
+  }
+}*/
+.dishes__cards {
+  width: 95%;
+  min-height: 5rem;
+  border: none;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 1s;
+    background-color: #99e2d0;
+  }
+  &:hover::after {
+    transform: translateX(0%);
+  }
+  .dishes__description {
+    width: calc(100% - 50px);
+    transition: 1s;
+  }
+  &:hover .dishes__description {
+    width: calc(100% - 150px);
+  }
 }
+
 .dishes__description h4,
 p {
   margin: 0;
   line-height: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .dishes__price {
   font-weight: 600;
+  width: 4rem;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .cta__btn {

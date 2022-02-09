@@ -1,4 +1,4 @@
-//bouton explorer et commander
+//bouton gradient
 .btn__primary {
   @include gradient-btn;
 }
@@ -34,6 +34,7 @@
 
 //les coeurs//
 .heart {
+ 
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
@@ -53,3 +54,5 @@
 .far:hover::after {
   @include heart-hover
 }
+
+//la coche qui tourne

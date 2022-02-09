@@ -250,6 +250,7 @@ header i {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -287,41 +288,6 @@ header i {
   width: 3rem;
 }
 
-/**
-.dishes__cards {
-  width: 95%;
-  min-height: 5rem;
-  border: none;
-  padding: 1rem;
-  background-color: #ffffff;
-  border-radius: 1.5rem;
-  @include box-shadow;
-
-  position: relative;
-  overflow: hidden;
-
-  .square {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-    transition: 1s;
-    background-color: $tertiary-color;
-  }
-
-    &:hover .square {
-      transform: translateX(0%);
-    }
-    .dishes__description {
-      background-color: aquamarine;
-      width: calc(100% - 50px);
-    }
-    &:hover .dishes__description {
-      width: calc(100% - 150px);
-  }
-}*/
 .dishes__cards {
   width: 95%;
   min-height: 5rem;
@@ -333,23 +299,22 @@ header i {
   position: relative;
   overflow: hidden;
 }
-.dishes__cards::after {
-  content: "";
+.dishes__cards .dishes__square {
   width: 5rem;
   height: 5rem;
   position: absolute;
   top: 0;
   right: 0;
   transform: translateX(100%);
-  transition: 1s;
+  transition: 1000ms;
   background-color: #99e2d0;
 }
-.dishes__cards:hover::after {
+.dishes__cards:hover .dishes__square {
   transform: translateX(0%);
 }
 .dishes__cards .dishes__description {
   width: calc(100% - 50px);
-  transition: 1s;
+  transition: 1000ms;
 }
 .dishes__cards:hover .dishes__description {
   width: calc(100% - 150px);
@@ -521,7 +486,7 @@ footer .fa-hands-helping {
   content: "\f004";
   position: relative;
   left: -2rem;
-  transition: 1s opacity ease-in-out 0.3s;
+  transition: 500ms opacity ease-in-out 0.3s;
   opacity: 0;
 }
 

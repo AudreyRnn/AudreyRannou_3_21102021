@@ -20,7 +20,7 @@
   height: 7rem;
   position: relative;
   border-radius: 50%;
-  border: 4px solid transparent;
+  border: 0.5rem solid transparent;
   border-top-color: rgb(147, 86, 220);
   animation: spin 1s linear 0s infinite;}
 
@@ -31,10 +31,10 @@
   left: 14px;
   bottom: 14px;
   right: 14px;
-  border-radius: 50px;
-  border: 4px solid transparent;
+  border-radius: 50%;
+  border: 0.5rem solid transparent;
   border-top-color: rgb(255, 121, 218);
-  opacity: 0.8;
+  
   animation: spin 5s linear 0s infinite;
 }
 .loader__spinner::before {
@@ -44,10 +44,9 @@
   left: 32px;
   bottom: 32px;
   right: 32px;
-  border-radius: 50px;
-  border: 4px solid transparent;
+  border-radius: 50%;
+  border: 0.5rem solid transparent;
   border-top-color: rgb(153, 226, 208);
-  opacity: 0.5;
   animation: spin 10s linear 0s infinite;
 }
 

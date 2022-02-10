@@ -89,6 +89,8 @@
   overflow: hidden;
 
   .dishes__square {
+    justify-content: center;
+    align-items: center;
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -97,6 +99,17 @@
     transform: translateX(100%);
     transition: 1000ms;
     background-color: $tertiary-color;
+      i {
+        display: flex;
+        background-color: #ffffff;
+        width: 2rem;
+        height:2rem;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        color: $tertiary-color;
+        align-items: center;
+        justify-content: center;
+      }
   }
 
     &:hover .dishes__square{

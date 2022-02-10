@@ -300,6 +300,8 @@ header i {
   overflow: hidden;
 }
 .dishes__cards .dishes__square {
+  justify-content: center;
+  align-items: center;
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -308,6 +310,17 @@ header i {
   transform: translateX(100%);
   transition: 1000ms;
   background-color: #99e2d0;
+}
+.dishes__cards .dishes__square i {
+  display: flex;
+  background-color: #ffffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #99e2d0;
+  align-items: center;
+  justify-content: center;
 }
 .dishes__cards:hover .dishes__square {
   transform: translateX(0%);

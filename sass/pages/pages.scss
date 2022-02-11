@@ -96,7 +96,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(100%);
+    transform: translateX(100%); 
     transition: 1000ms;
     background-color: $tertiary-color;
       i {
@@ -109,12 +109,17 @@
         color: $tertiary-color;
         align-items: center;
         justify-content: center;
+        transform: rotate(0deg);
+        transition:transform 500ms ease-in;
       }
   }
 
     &:hover .dishes__square{
       transform: translateX(0%);
-      
+        
+    }
+    &:hover .dishes__square i {
+      transform: rotate(360deg);
     }
     .dishes__description {
       width: calc(100% - 50px);

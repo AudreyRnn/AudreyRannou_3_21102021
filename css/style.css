@@ -321,9 +321,14 @@ header i {
   color: #99e2d0;
   align-items: center;
   justify-content: center;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in;
 }
 .dishes__cards:hover .dishes__square {
   transform: translateX(0%);
+}
+.dishes__cards:hover .dishes__square i {
+  transform: rotate(360deg);
 }
 .dishes__cards .dishes__description {
   width: calc(100% - 50px);

@@ -146,6 +146,12 @@ header i {
   padding-bottom: 2rem;
   flex-direction: column;
 }
+@media all and (min-width: 992px) {
+  .restaurants {
+    align-items: center;
+    gap: 2rem;
+  }
+}
 @media all and (min-width: 768px) {
   .restaurants h2 {
     text-align: center;
@@ -157,9 +163,10 @@ header i {
 }
 @media all and (min-width: 992px) {
   .restaurants__container {
+    width: 90%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 
@@ -171,6 +178,7 @@ header i {
 @media all and (min-width: 992px) {
   .restaurants__list {
     width: 45%;
+    align-self: center;
   }
 }
 
@@ -178,6 +186,11 @@ header i {
   margin: 1rem;
   box-shadow: 0.3rem 0.3rem 0.5rem #bbbaba;
   border-radius: 2rem;
+}
+@media all and (min-width: 992px) {
+  .restaurants__cards {
+    max-width: 750px;
+  }
 }
 .restaurants__cards img {
   width: 100%;

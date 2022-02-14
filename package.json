@@ -4,11 +4,14 @@
   "description": "Projet 3 Ohmyfood",
   "main": "index.js",
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
     "sass": "^1.49.7"
   },
   "scripts": {
     "sass": "sass ./sass/style.scss:./css/style.css -w --style expanded",
-    "prefix": "postcss ./css/style.css --use autoprefixer/css/prefixed"
+    "prefix": "postcss ./css/style.css -u autoprefixer -o  ./css/style_prefixed.css "
   },
   "repository": {
     "type": "git",
@@ -16,14 +19,9 @@
   },
   "author": "Audrey Rannou",
   "license": "ISC",
-  "browserslist": "last 2 versions",
+  "browserslist": "last 3 versions",
   "bugs": {
     "url": "https://github.com/AudreyRnn/AudreyRannou_3_21102021/issues"
   },
-  "homepage": "https://github.com/AudreyRnn/AudreyRannou_3_21102021#readme",
-  "dependencies": {
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.6",
-    "postcss-cli": "^9.1.0"
-  }
+  "homepage": "https://github.com/AudreyRnn/AudreyRannou_3_21102021#readme"
 }

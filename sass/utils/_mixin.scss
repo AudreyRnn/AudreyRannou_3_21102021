@@ -1,7 +1,23 @@
 @mixin box-shadow {
   box-shadow: 0.3rem 0.3rem 0.5rem $color-box;
 }
-
+@mixin btn-operating
+{
+  width: 85%;
+  min-height: 5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: $back-color;
+  align-items: center;
+  @include box-shadow;
+  gap: 0.8rem;
+  font-weight: 600;
+  transition: background-color 250ms;
+  &:hover {
+    background-color: #f5edff;
+    cursor: pointer;
+  }
+}
 @mixin new {
   // l'insert nouveau
   content: "Nouveau";

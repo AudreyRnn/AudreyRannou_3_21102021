@@ -67,6 +67,30 @@
     position: relative;
   }
 }
+.dishes__starting {
+  animation-delay: 400ms;
+  opacity: 0;
+}
+.dishes__dish {
+  animation-delay: 900ms;
+  opacity: 0;
+}
+.dishes__dessert {
+  animation-delay: 1400ms;
+  opacity: 0;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+}
+
 .dishes__title::after {
   //Bordure sous les catégories de plats
   content: "";
@@ -151,26 +175,3 @@
   height: 8rem;
 }
 
-.dishes__starting {
-  animation-delay: 400ms;
-  opacity: 0;
-}
-.dishes__dish {
-  animation-delay: 900ms;
-  opacity: 0;
-}
-.dishes__dessert {
-  animation-delay: 1400ms;
-  opacity: 0;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-1rem);
-  }
-}

@@ -24,7 +24,7 @@
   border-top-color: rgb(147, 86, 220);
   animation: spin 1s linear 0s infinite;}
 
-.loader__spinner:after {
+.loader__spinner::after {
   content: "";
   position: absolute;
   top: 14px;

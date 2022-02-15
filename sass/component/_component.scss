@@ -4,21 +4,9 @@
 }
 
 // les boutons fonctionnement
-.operating__btn {
-  width: 85%;
-  min-height: 5rem;
-  border: none;
-  border-radius: 1.5rem;
-  background-color: $back-color;
-  align-items: center;
-  box-shadow: 0.3rem 0.3rem 0.5rem $color-box;
-  gap: 0.8rem;
-  font-weight: 600;
-  transition: background-color 250ms;
-  &:hover {
-    background-color: #f5edff;
-    cursor: pointer;
-  }
+.operating__btn 
+{
+  @include btn-operating;
 }
 .operating__btn:hover i {
   color: $primary-color;
@@ -55,4 +43,4 @@
   @include heart-hover
 }
 
-//la coche qui tourne
+

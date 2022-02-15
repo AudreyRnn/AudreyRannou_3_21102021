@@ -243,7 +243,7 @@ footer .fa-hands-helping {
   animation: spin 1s linear 0s infinite;
 }
 
-.loader__spinner:after {
+.loader__spinner::after {
   content: "";
   position: absolute;
   top: 14px;
@@ -501,6 +501,31 @@ footer .fa-hands-helping {
   position: relative;
 }
 
+.dishes__starting {
+  animation-delay: 400ms;
+  opacity: 0;
+}
+
+.dishes__dish {
+  animation-delay: 900ms;
+  opacity: 0;
+}
+
+.dishes__dessert {
+  animation-delay: 1400ms;
+  opacity: 0;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+}
 .dishes__title::after {
   content: "";
   border-bottom: 3px solid #99e2d0;
@@ -580,32 +605,6 @@ footer .fa-hands-helping {
   justify-content: center;
   align-items: center;
   height: 8rem;
-}
-
-.dishes__starting {
-  animation-delay: 400ms;
-  opacity: 0;
-}
-
-.dishes__dish {
-  animation-delay: 900ms;
-  opacity: 0;
-}
-
-.dishes__dessert {
-  animation-delay: 1400ms;
-  opacity: 0;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-1rem);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

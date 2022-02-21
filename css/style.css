@@ -483,10 +483,7 @@ footer .fa-hands-helping {
   align-items: center;
   padding-bottom: 1.5rem;
   align-items: center;
-  animation-name: appear;
-  animation-duration: 2000ms;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation: appear 2000ms ease forwards;
 }
 @media all and (min-width: 992px) {
   .dishes {
